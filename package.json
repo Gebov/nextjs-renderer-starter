@@ -3,12 +3,12 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
-        "@progress/sitefinity-react-framework": "file:../nextjs-renderer/dist-framework",
+        "@progress/sitefinity-widget-designers-sdk": "0.0.8",
+        "@progress/sitefinity-react-framework": "0.0.1",
         "bootstrap": "5.3.2",
         "next": "14.0.3",
         "react": "18.2.0",
-        "react-dom": "18.2.0",
-        "typescript": "5.3.2"
+        "react-dom": "18.2.0"
     },
     "devDependencies": {
         "@testing-library/jest-dom": "6.1.4",
@@ -28,7 +28,9 @@
         "jest-environment-jsdom": "29.7.0",
         "prettier": "3.1.0",
         "ts-jest": "29.1.1",
-        "ts-node": "10.9.1"
+        "ts-node": "10.9.1",
+        "isomorphic-fetch": "3.0.0",
+        "typescript": "5.3.2"
     },
     "scripts": {
         "prod": "next start",
@@ -36,6 +38,7 @@
         "build": "next build",
         "lint": "eslint . --quiet",
         "lint:fix": "eslint . --fix",
-        "test": "jest"
+        "test": "jest",
+        "test:watch": "jest --watch"
     }
 }
